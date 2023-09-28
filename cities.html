@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <title>Assignment 5</title>
-  <h4>Visit cities with Sreeja</h4>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -12,8 +11,14 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</head>
+    <style>
+      /* Add custom CSS for additional styling */
+      tr:hover {background-color: coral;}
+      img{height: 400px;width: 400px;}
+  </style>
+  </head>
 <body>
+  <h4><center>Visit cities with Sreeja</center></h4>
     <div class="container">
 
         <div class="row">
@@ -52,9 +57,149 @@
 
     <br>
 
-    <p>Cities line will broken as we have given the command col-md medium size is larger
+    <div class="container"></div><p>Cities line will broken as we have given the command col-md medium size is larger when resized the line is getting broken</p></div>
 
-         when resized the line is getting broken</p>
+         <div class="container">
+          <img src="Vancouver.jpg" alt="City 1" width="400px" height="400px">
+          <img src="Austin.jpg" alt="City 2" width="400px" height="400px">
+          <img src="San antonio.jpg" alt="City 3" width="400px" height="400px">
+        </div>
+      </br>
+    </br>
+      
+        <div class="container">
+          <img src="Vancouver.jpg" alt="City 1" class="img-thumbnail" />
+          <img src="Austin.jpg" alt="City 2" class="img-thumbnail" >
+          <img src="San antonio.jpg" alt="City 3" class="img-thumbnail" />
+        </div>
+      </br>
+    </br>
 
+    <div class="container table-responsive">
+      <table class="table table-bordered table-success table-striped table-hover">
+          <!-- Add a caption element before the thead -->
+          <caption>Table of Letters, Cities, Rivers, and Trees</caption>
+          <thead class="table-dark">
+              <tr>
+                  <!-- Set scope for table headers -->
+                  <th scope="col">Letter</th>
+                  <th scope="col">City</th>
+                  <th scope="col">River</th>
+                  <th scope="col">Tree</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr >
+                  <th scope="row">V</th>
+                  <td>Vancouver</td>
+                  <td>Fraser River</td>
+                  <td>Yew Tree</td>
+              </tr>
+              <tr>
+                  <th scope="row">A</th>
+                  <td>Austin</td>
+                  <td>Colorado River</td>
+                  <td>Ash Tree</td>
+              </tr>
+              <tr >
+                  <th scope="row">S</th>
+                  <td>San Antonio</td>
+                  <td>Mississippi River</td>
+                  <td>Maple Tree</td>
+              </tr>
+              <tr >
+                  <th scope="row">A</th>
+                  <td>Atlanta</td>
+                  <td>Coosa River</td>
+                  <td>Peach Tree</td>
+              </tr>
+              <tr >
+                  <th scope="row">V</th>
+                  <td>Venice</td>
+                  <td>sile River</td>
+                  <td>maple Tree</td>
+              </tr>
+              <tr >
+                  <th scope="row">A</th>
+                  <td>Arlington</td>
+                  <td>Stillaguamish River</td>
+                  <td>magnolias Tree</td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+    <div class="container mt-4">
+      <!-- Button Groups -->
+      <div class="btn-toolbar" role="toolbar" aria-label="Button groups">
+          <!-- Group 1: Buttons for Letters with Success Coloring -->
+          <div class="btn-group" role="group" aria-label="Group 1">
+              <button type="button" class="btn btn-success">V</button>
+              <button type="button" class="btn btn-success">A</button>
+              <button type="button" class="btn btn-success">S</button>
+          </div>
+    
+          <!-- Group 2: Buttons with Alert Coloring -->
+          <div class="btn-group" role="group" aria-label="Group 2">
+              <button type="button" class="btn btn-warning">A</button>
+              <button type="button" class="btn btn-warning">V</button>
+          </div>
+    
+          <!-- Group 3: Remaining Button with Danger Coloring -->
+          <div class="btn-group" role="group" aria-label="Group 3">
+              <button type="button" class="btn btn-danger">A</button>
+          </div>
+    </div>
+    </div>
+    
+    </br>
+    </br>
+    
+    <div class="container dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown Menu
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+          <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
+        </ul>
+      </div>
+      <div class="container dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown Menu
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+          <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
+        </ul>
+      </div>
+    
+      </br>
+      </br>
+    
+      <div class="container">
+      <form>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+    </br>
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" class="form-control" id="city" placeholder="Enter your city">
+        </div>
+    </br>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="newsletter">
+            <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
+        </div></br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+     </form>
+    </div>
+    </br>
+    
+      </br>
+      </br>
+    
 </body>
 </html>
